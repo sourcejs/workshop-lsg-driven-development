@@ -182,6 +182,12 @@ Restart SourceJS and view the bundle by this URL [localhost:8080/specs/example-b
 
 View other bundle example on [SourceJS website](http://sourcejs.com/specs/).
 
+## TODO
+
+* Record screencast
+* Add links to diff between tagged steps
+* Add few more bonus steps
+
 ___
 
 Initialized with [SourceJS](http://sourcejs.com) 0.5.2 - Living Style Guide Engine and Maintenance Environment for Front-end Components.
