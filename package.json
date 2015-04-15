@@ -1,7 +1,8 @@
 {
-    "author": "Sorcerers",
-    "version": "0.1.0",
-    "description": "Here you can add your specific Source dependencies for extending app.js or adding custom server plugins",
-    "dependencies": {
-    }
+  "author": "Sorcerers",
+  "version": "0.1.0",
+  "description": "Here you can add your specific Source dependencies for extending app.js or adding custom server plugins",
+  "dependencies": {
+    "sourcejs-contrib-browser-sync": "^0.1.1"
+  }
 }
