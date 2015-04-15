@@ -1,0 +1,16 @@
+{
+  "name": "button-component",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sourcejs/workshop-lsg-driven-development",
+  "authors": [
+    "Robert Haritonov <r@rhr.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
