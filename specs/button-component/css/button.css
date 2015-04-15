@@ -1,0 +1,40 @@
+/* Button
+---------------------------------------------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    background-color: cyan;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, sans;
+    }
+
+.btn.__hover,
+.btn:hover {
+    background-color: red;
+    }
+
+.btn.__big {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    }
+
+.btn_group .btn {
+    float: left;
+    border-radius: 0;
+    }
+
+.btn_group .btn:first-child {
+    border-radius: 5px 0 0 5px;
+    border-right: solid 1px #000;
+    }
+
+.btn_group .btn:last-child {
+    border-radius: 0 5px 5px 0;
+    border-left: solid 1px #000;
+    }
+
+/* /Button
+---------------------------------------------------------------------------------- */
