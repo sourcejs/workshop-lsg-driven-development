@@ -1,12 +1,12 @@
 # Living Style Guide Driven Development Workshop
 
-Follow workshop scenario and [tagged](/releases) repo versions to reproduce the steps.
+Follow workshop scenario and [tagged](https://github.com/sourcejs/workshop-lsg-driven-development/releases) repo versions to reproduce the steps.
 
 Screencast coming soon.
 
-This repo contains [SourceJS](http://sourcejs.com) Living Style Guide Platform `user` folder with engine configuration and components library contents.
+This repo contains [SourceJS](http://sourcejs.com) (0.5.2) `user` folder with engine configuration and components library contents.
 
-## Scenario
+## Workshop Scenario
 
 ### Step 0: Set-up
 
@@ -18,7 +18,7 @@ Note that Style Guide driven development workflow could be achieved also by othe
 
 After init, you will have few stub Spec pages prepared. Open `sourcejs/user/specs/button/index.src.html` and define you demo markup:
 
-```
+```html
 <link rel="stylesheet" href="css/button.css">
 
 <h1>Button Spec</h1>
@@ -32,11 +32,11 @@ After init, you will have few stub Spec pages prepared. Open `sourcejs/user/spec
 </section>
 ```
 
-Run SourceJS and open the Spec to view the result http://localhost:8080/specs/button
+Run SourceJS and open the Spec to view the result [localhost:8080/specs/button](http://localhost:8080/specs/button).
 
 Use [browser-sync](https://github.com/sourcejs/sourcejs-contrib-browser-sync) plugin to develop your Spec next to browser window with auto-update.
 
-Following Living Style Guide driven development, all components and UI element are developed right in the documentation. Leaving all component states and modifiers in the same page helps to test Front-end faster and gives a better overview of element features.
+**Following Living Style Guide driven development, all components and UI element are developed right in the documentation. Leaving all component states and modifiers in the same page helps to test Front-end faster and gives a better overview of element features.**
 
 ### Step 2: CSS Doc
 
@@ -84,7 +84,7 @@ In this step we will add [EJS](http://ejs.co/) templates, to get rid of HTML cop
 
 Copy `button` Spec to the new folder, create few templates with `*.ejs` extension and import them into your `index.src.html` file:
 
-```
+```html
 <div class="source_example">
     <% include templates/button.ejs %>
     <%- include('templates/button.ejs', { mod: "big" }) %>
@@ -94,11 +94,11 @@ Copy `button` Spec to the new folder, create few templates with `*.ejs` extensio
 
 EJS template examples:
 
-```
+```html
 <a href="#777" class="btn <% if (locals.mod) { %>__<%- mod %><% } %>">Button</a>
 ```
 
-```
+```html
 <div class="btn_group">
     <a href="#777" class="btn">Button1</a>
     <a href="#777" class="btn">Button2</a>
@@ -133,6 +133,7 @@ And installed our component there through bower:
 
 ```
 bower link button-component
+gulp serve
 ```
 
 Now when our dependencies are ready, we can link our component to `webapp/app/index.html` page.
@@ -159,7 +160,7 @@ Now when our dependencies are ready, we can link our component to `webapp/app/in
 <!-- /Our btn -->
 ```
 
-Note that you can use any templating engine using this approach.
+Note that you can use any templating engine using this approach, EJS is just an example.
 
 ### Step 5: Nested bundles
 
@@ -177,7 +178,9 @@ cd example-bootstrap-bundle
 bower install
 ```
 
-Restart SourceJS and view the bundle by this URL http://localhost:8080/specs/example-bootstrap-bundle
+Restart SourceJS and view the bundle by this URL [localhost:8080/specs/example-bootstrap-bundle](http://localhost:8080/specs/example-bootstrap-bundle).
+
+View other bundle example on [SourceJS website](http://sourcejs.com/specs/).
 
 ___
 
